@@ -1,6 +1,7 @@
 ## Paritta Chanting
 
 This is a web-based app & tool designed to support practitioners in listening to, learning, and reciting the Paritta Protection Suttas on a daily basis. It features synchronized text & audio chanting for precise follow-along practice, includes memorization drills by hiding random words, and an interactive dashboard to track memorization progress.
+
 <img width="789" height="586" alt="image" src="https://github.com/user-attachments/assets/f8a6624d-cb21-4d49-b3c7-19f1afab4d2d" />
 
 #### INTRODUCTION
