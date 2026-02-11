@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="./images/favicon3.ico">
-	<link rel="manifest" href="./manifest6.json">
+	<link rel="icon" type="image/x-icon" href="./images/favicon2.ico">
+	<link rel="manifest" href="./manifest4.json">
 	<meta name="theme-color" content="#8b5cf6">
-	<link rel="apple-touch-icon" href="./images/icon-192-paritta.png">
+	<link rel="apple-touch-icon" href="./images/icon-192-patimokkha.png">
 	<link href="./css/css.css" rel="stylesheet">
 	<link href="./css/vi.css" rel="stylesheet">
-    <title>Paritta Chanting</title>
+    <title>Pātimokkha Memorize</title>
  	<script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/prdpd_i2h.js"></script>
-    <script src="./js/eprdpd_ebts.js"></script>
-    <script src="./js/prdpd_deconstructor.js"></script>
-
-
-    </style>
+    <script src="./js/edpd_i2h.js"></script>
+    <script src="./js/edpd_ebts.js"></script>
+    <script src="./js/dpd_deconstructor.js"></script>	
 </head>
 <body>
 
@@ -32,9 +29,9 @@
             <button class="btn-nav" onclick="changeSection(1)"><i class="fas fa-angle-right"></i></button>
 	    <div id="top-right-controls" style="display: flex; gap: 3px; align-items: center;">
         
-       <button class="btn-nav" onclick="openHelpModal()" title="Trợ giúp">
+        <button class="btn-nav" onclick="openHelpModal()" title="Trợ giúp">
     <i class="fas fa-circle-info"></i>
-</button>	
+</button>		
         </div>
     </div>
 </div>
@@ -42,10 +39,10 @@
 <div id="section-achievement-banner">
     <h3>
         <i class="fas fa-wreath-laurel"></i> 
-        Sutadhara
+        Vinayavidū
         <i class="fas fa-wreath-laurel"></i>
     </h3>
-    <div style="font-size:12px; margin-top:5px;">Certification of Achievement in&nbsp;Memorizing&nbsp;this&nbsp;Sutta</div>
+    <div style="font-size:12px; margin-top:5px;">Certification of Achievement in&nbsp;Memorizing&nbsp;this&nbsp;Sikkhāpada</div>
 </div>
 
 	<div id="recitation-dashboard">
@@ -64,12 +61,7 @@
         </div>
     </div>
 </div>
-  <div class="section-header-wrapper">
-        <h2 id="section-title">Loading...</h2>
-        <i id="btn-section-info" class="fas fa-circle-info btn-info-icon" onclick="showSectionInfo()" title="About this Sutta"></i>
-    </div>
-    
-    <h2 id="section-title-vn" style="font-weight: normal; font-size: 18px; margin-top: 0; opacity: 0.9;"></h2>
+    <h2 id="section-title">Loading...</h2>
     <div id="display-area" class="text-content"></div>
 </div>
 
@@ -125,35 +117,24 @@
         </div>
     </div>
 </div>
-<div id="simple-info-modal" class="simple-modal-overlay">
-    <div class="simple-modal-content">
-        <div class="simple-modal-header">
-            <h3 id="simple-modal-title">Sutta Info</h3>
-            <button class="btn-close-simple" onclick="closeSimpleInfoModal()"><i class="fas fa-times"></i></button>
-        </div>
-        <div id="simple-modal-body" class="simple-modal-body">
-            </div>
-    </div>
-</div>
-
 <div id="help-modal" class="help-modal-overlay" onclick="closeHelpModal(event)">
     <div class="help-modal-content">
-       <div class="help-modal-header">
-            <h3>Paritta Chanting</h3>
+        <div class="help-modal-header">
+            <h3>Pātimokkha Memorize</h3>
             <button class="btn-close-help" onclick="closeHelpModal(event)"><i class="fas fa-xmark"></i></button>
         </div>
 		<div class="help-modal-body">
     
-    
-   <p>This is a web-based app & tool designed to support practitioners in listening to, learning, and reciting the <b>Paritta Protection Suttas</b> on a daily basis. It features synchronized text & audio chanting for precise follow-along practice, includes memorization drills by hiding random words, and an interactive dashboard to track memorization progress.</p>
+   
+    <p>This is a web-based app & tool designed to assist Bhikkhus and students in <b>memorizing the Pātimokkha</b>. It features synchronized text & audio chanting for precise follow-along practice, includes memorization drills by hiding random words, and an interactive dashboard to track memorization progress.</p>
 
     <h4><i class="fas fa-book-open-reader"></i> User Guide</h4>
     
     <h4>1. Navigation & Basics</h4>
     <ul>
         <li><b>Theme Toggle (<i class="fas fa-moon"></i>/<i class="fas fa-sun-bright"></i>):</b> Switch between Light and Dark modes.</li>
-        <li><b>Section Selector:</b> Jump to a specific sutta (e.g., Maṅgalasutta, Mettasutta).</li>
-        <li><b>Random (<i class="far fa-dharmachakra"></i>):</b> Jump to a random sutta to test your recall.</li>
+        <li><b>Section Selector:</b> Jump to a specific rule (e.g., Pārājika 1).</li>
+        <li><b>Random (<i class="far fa-dharmachakra"></i>):</b> Jump to a random rule to test your recall.</li>
         <li><b>Dictionary (<i class="fas fa-book-open"></i>):</b> Toggle to enable Pāli lookup. Hover over words to see definitions.</li>
     </ul>
 
@@ -189,11 +170,11 @@
         <li><b>Marking Progress:</b> When a line is active, a <b>"Memorized"</b> checkbox appears below the text. Check this to mark the line as complete (100%).</li>
         <li><b>Statistics:</b>
             <ul>
-                <li><b>Section Progress:</b> Completion % of the current Sutta.</li>
-                <li><b>Memorized Total:</b> Completion % of all the Paritta Suttas.</li>
+                <li><b>Section Progress:</b> Completion % of the current rule.</li>
+                <li><b>Memorized Total:</b> Completion % of the entire Pātimokkha.</li>
             </ul>
         </li>
-        <li><b>Achievements:</b> You will receive a "Sutadhara" banner for completing a sutta, and a "Dhammadhara" Medal Modal for completing the entire text.</li>
+        <li><b>Achievements:</b> You will receive a "Sikkhāpadavidū" banner for completing a section, and a "Vinayavidū" Medal Modal for completing the entire text.</li>
     </ul>
 
     <h4>5. Settings (<i class="fas fa-gear"></i>)</h4>
@@ -207,7 +188,7 @@
         To Use Offline, download the Apk file for Android, Zip file for PC, or ZIM file for Kiwix.
         (Learn more about Kiwix: <a href="https://kiwix.org/en/" target="_blank">kiwix.org</a>).
     </p>
-    <p>Download Link & Source Code: <a href="https://github.com/buddhanussati/paritta-chanting"><b>here</b></a></p>
+    <p>Download Link & Source Code: <a href="https://github.com/buddhanussati/patimokkha-memorize"><b>here</b></a></p>
 
     <h4><i class="fas fa-scale-balanced"></i>&nbsp;&nbsp;License</h4>
     <p>
@@ -223,16 +204,16 @@
             <i class="far fa-wreath-laurel"></i>
         </div>
         
-        <div class="modal-title">Dhammadhara</div>
+        <div class="modal-title">Vinayavidū</div>
         
         <p class="modal-text">
-            Certification of Achievement: Full&nbsp;Memorization of&nbsp;the&nbsp;<b>Paritta&nbsp;Suttas</b><br>
+            Certification of Achievement: Full&nbsp;Memorization of&nbsp;the&nbsp;<b>Bhikkhu&nbsp;Pātimokkha</b><br>
             
             <span style="display: block; color: #b35900; font-weight: 600; font-style: italic; margin-top: 15px;">
-       "The disciples of Gotama,<br>
-        always well-awake,<br>
-        who day and night<br>
-        constantly recollect the teaching."
+       "Calm in body, calm in speech,<br>
+        Tranquil and composed of heart,<br>
+        Whoso has spewed out worldly&nbsp;wants<br>
+        "Serene" is such a bhikkhu called."
     </span>
         </p>
         
@@ -265,7 +246,7 @@
         </div>
     </div>
 </div>
-<script src="./js/en-paritta.js"></script>
+<script src="./js/en-patimokkha.js"></script>
 
 </body>
 </html>

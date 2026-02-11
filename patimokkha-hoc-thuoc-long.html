@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="./images/favicon3.ico">
-	<link rel="manifest" href="./manifest5.json">
+	<link rel="icon" type="image/x-icon" href="./images/favicon2.ico">
+	<link rel="manifest" href="./manifest3.json">
 	<meta name="theme-color" content="#8b5cf6">
-	<link rel="apple-touch-icon" href="./images/icon-192-paritta.png">
+	<link rel="apple-touch-icon" href="./images/icon-192-patimokkha.png">
 	<link href="./css/css.css" rel="stylesheet">
 	<link href="./css/vi.css" rel="stylesheet">
-    <title>Kinh Hộ Trì</title>
+    <title>Học Thuộc Lòng Pātimokkha</title>
  	<script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/prdpd_i2h.js"></script>
-    <script src="./js/prdpd_ebts.js"></script>
-    <script src="./js/prdpd_deconstructor.js"></script>
-
+    <script src="./js/dpd_i2h.js"></script>
+    <script src="./js/dpd_ebts.js"></script>
+    <script src="./js/dpd_deconstructor.js"></script>
 </head>
 <body>
 
@@ -30,7 +29,7 @@
             <button class="btn-nav" onclick="changeSection(1)"><i class="fas fa-angle-right"></i></button>
 	    <div id="top-right-controls" style="display: flex; gap: 3px; align-items: center;">
         
-        <button class="btn-nav" onclick="openHelpModal()" title="Trợ giúp">
+       <button class="btn-nav" onclick="openHelpModal()" title="Trợ giúp">
     <i class="fas fa-circle-info"></i>
 </button>
         </div>
@@ -40,10 +39,10 @@
 <div id="section-achievement-banner">
     <h3>
         <i class="fas fa-wreath-laurel"></i> 
-        Hộ Trì Pháp Bảo
+        Hộ Trì Học Giới
         <i class="fas fa-wreath-laurel"></i>
     </h3>
-    <div style="font-size:12px; margin-top:5px;">Chứng Nhận Thành Tựu Học&nbsp;Thuộc&nbsp;Lòng Kinh&nbsp;Hộ&nbsp;Trì&nbsp;Paritta</div>
+    <div style="font-size:12px; margin-top:5px;">Chứng Nhận Thành Tựu Học Thuộc Lòng Học&nbsp;Giới&nbsp;Này</div>
 </div>
 
 	<div id="recitation-dashboard">
@@ -62,15 +61,9 @@
         </div>
     </div>
 </div>
-   <div class="section-header-wrapper">
-        <h2 id="section-title">Đang tải...</h2>
-        <i id="btn-section-info" class="fas fa-circle-info btn-info-icon" onclick="showSectionInfo()" title="Về kinh này"></i>
-    </div>
-    
-    <h2 id="section-title-vn" style="font-weight: normal; font-size: 18px; margin-top: 0; opacity: 0.9;"></h2>
+    <h2 id="section-title">Loading...</h2>
     <div id="display-area" class="text-content"></div>
 </div>
-
 
 <div class="bottom-bar">
     <div class="bar-main-row">
@@ -125,20 +118,22 @@
 </div>
 <div id="help-modal" class="help-modal-overlay" onclick="closeHelpModal(event)">
     <div class="help-modal-content">
-        <div class="help-modal-header">
-            <h3>Kinh Hộ Trì Paritta</h3>
+       <div class="help-modal-header">
+            <h3>Học Thuộc Pātimokkha</h3>
             <button class="btn-close-help" onclick="closeHelpModal(event)"><i class="fas fa-xmark"></i></button>
         </div>
 		<div class="help-modal-body">
-    <p>Đây là ứng dụng & công cụ được thiết kế để hỗ trợ các hành giả trong việc nghe, học, và tụng trì hàng ngày <b>Kinh Hộ Trì Paritta.</b> Ứng dụng có tính năng đồng bộ văn bản với âm thanh cho phép thực hành tụng đọc theo chính xác, đồng thời bao gồm các bài tập ghi nhớ bằng cách ẩn ngẫu nhiên các từ, và một bảng điều khiển tương tác để theo dõi tiến độ học thuộc.</p>
+    
+
+    <p>Đây là ứng dụng & công cụ được thiết kế để hỗ trợ chư Tăng và hành giả <b>học thuộc lòng Giới Bổn Pātimokkha</b>. Ứng dụng có tính năng đồng bộ văn bản với âm thanh cho phép thực hành tụng đọc theo chính xác, đồng thời bao gồm các bài tập ghi nhớ bằng cách ẩn ngẫu nhiên các từ, và một bảng điều khiển tương tác để theo dõi tiến độ học thuộc.</p>
 
     <h4><i class="fas fa-book-open-reader"></i> Hướng Dẫn</h4>
     
     <h4>1. Điều Hướng & Cơ Bản</h4>
     <ul>
         <li><b>Giao Diện (<i class="fas fa-moon"></i>/<i class="fas fa-sun-bright"></i>):</b> Chuyển đổi giữa Chế độ Sáng và Tối.</li>
-        <li><b>Chọn Mục:</b> Sử dụng menu thả xuống để chuyển đến một bài kinh cụ thể (ví dụ: Maṅgalasutta, Mettasutta)</li>
-        <li><b>Ngẫu Nhiên (<i class="far fa-dharmachakra"></i>):</b> Chuyển đến một bài kinh bất kỳ.</li>
+        <li><b>Chọn Mục:</b> Chuyển đến một điều học cụ thể (ví dụ: Pārājika 1).</li>
+        <li><b>Ngẫu Nhiên (<i class="far fa-dharmachakra"></i>):</b> Chuyển đến một điều học bất kỳ.</li>
         <li><b>Từ Điển (<i class="fas fa-book-open"></i>):</b> Bật để tra cứu Pāli. Di chuột qua từ để xem nghĩa.</li>
     </ul>
 
@@ -174,11 +169,11 @@
         <li><b>Đánh Dấu:</b> Khi dòng đang chạy, ô chọn <b>"Đã thuộc"</b> sẽ hiện dưới văn bản. Đánh dấu vào đó để xác nhận đã thuộc (100%).</li>
         <li><b>Thống Kê:</b>
             <ul>
-                <li><b>Đã thuộc phần này:</b> % hoàn thành của bài kinh hiện tại.</li>
-                <li><b>Đã thuộc tất cả:</b> % hoàn thành của toàn bộ các Kinh Hộ Trì.</li>
+                <li><b>Đã thuộc phần này:</b> % hoàn thành của điều học hiện tại.</li>
+                <li><b>Đã thuộc tất cả:</b> % hoàn thành của toàn bộ giới bổn.</li>
             </ul>
         </li>
-        <li><b>Thành Tựu:</b> Bạn sẽ nhận Biểu ngữ "Hộ Trì Học Pháp" khi thuộc xong một bài kinh, và Huy chương "Bậc Hộ Trì Pháp" khi thuộc toàn bộ.</li>
+        <li><b>Thành Tựu:</b> Bạn sẽ nhận Biểu ngữ "Hộ Trì Học Giới" khi thuộc xong một phần, và Huy chương "Bậc Hộ Trì Giới" khi thuộc toàn bộ.</li>
     </ul>
 
     <h4>5. Cài Đặt (<i class="fas fa-gear"></i>)</h4>
@@ -192,7 +187,7 @@
         Tải xuống tệp Apk cho Android, tệp Zip cho PC, hoặc tệp ZIM cho Kiwix.
         (Tìm hiểu thêm về Kiwix: <a href="https://kiwix.org/en/" target="_blank">kiwix.org</a>).
     </p>
-    <p>Tải xuống & Mã Nguồn: <a href="https://github.com/buddhanussati/paritta-chanting"><b>tại đây.</b></a></p>
+    <p>Tải xuống & Mã Nguồn: <a href="https://github.com/buddhanussati/patimokkha-memorize"><b>tại đây.</b></a></p>
 
     <h4><i class="fas fa-scale-balanced"></i>&nbsp;&nbsp;Giấy Phép</h4>
     <p>
@@ -200,35 +195,26 @@
         Được phép Chia sẻ và Chuyển thể cho mục đích <b>phi thương mại</b>.
     </p>
 	<button class="btn-bottom-close" onclick="closeHelpModal(event)">Đóng</button>
-        </div></div>
-</div>
-<div id="simple-info-modal" class="simple-modal-overlay">
-    <div class="simple-modal-content">
-        <div class="simple-modal-header">
-            <h3 id="simple-modal-title">Về Kinh này</h3>
-            <button class="btn-close-simple" onclick="closeSimpleInfoModal()"><i class="fas fa-times"></i></button>
         </div>
-        <div id="simple-modal-body" class="simple-modal-body">
-            </div>
-    </div>
-</div>
+</div></div>
 <div id="grand-achievement-modal" class="modal-overlay">
     <div class="modal-content">
         <div class="medal-icon">
             <i class="far fa-wreath-laurel"></i>
         </div>
         
-        <div class="modal-title">Bậc Hộ Trì Pháp</div>
+        <div class="modal-title">Bậc Hộ Trì Giới</div>
         
         <p class="modal-text">
-            Chứng Nhận Thành Tựu Học&nbsp;Thuộc&nbsp;Lòng <b>Kinh&nbsp;Hộ&nbsp;Trì&nbsp;Paritta</b><br>
+            Chứng Nhận Thành Tựu Học&nbsp;Thuộc&nbsp;Lòng <b>Giới&nbsp;Bổn&nbsp;Pātimokkha</b><br>
             
             <span style="display: block; color: #b35900; font-weight: 600; font-style: italic; margin-top: 15px;">
-        "Ðệ tử Gotama<br>
-        Luôn luôn tự tỉnh giác,<br>
-        Vô luận ngày hay đêm,<br>
-        Tưởng Chánh Pháp thường niệm."
-    </span>
+               "Người chế ngự tay chân,<br>
+Chế ngự lời và ý,<br>
+Vui thích nội thiền định.<br>
+Ðộc thân, biết vừa đủ,<br>
+Thật xứng gọi Tỷ-kheo."
+            </span>
         </p>
         
         <button class="btn-close-modal" onclick="closeAchievementModal()">Sādhu! Lành thay!</button>
@@ -260,6 +246,6 @@
         </div>
     </div>
 </div>
-<script src="./js/vi-paritta.js"></script>
+<script src="./js/vi-patimokkha.js"></script>
 </body>
 </html>
